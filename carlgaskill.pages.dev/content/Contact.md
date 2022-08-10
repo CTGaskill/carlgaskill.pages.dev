@@ -2,6 +2,8 @@
 title: "Contact"
 date: "2020-02-25"
 ---
+
+{{< rawhtml >}}
 <link rel="stylesheet" href="/static/css/form.css">
 <form action="https://getform.io/f/66cf5677-1633-4246-a197-4c6f9ff31427" method="post" target="hidden_iframe" onsubmit="submitted=true">
   <label>Name</label>
@@ -16,3 +18,4 @@ date: "2020-02-25"
    <button type="submit">Send</button>
 </form>
 
+{{</rawhtml >}}
