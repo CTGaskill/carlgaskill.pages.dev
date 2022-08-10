@@ -18,4 +18,5 @@ date: "2020-02-25"
    <button type="submit">Send</button>
 </form>
 
-{{</rawhtml >}}
+{{< /rawhtml >}}
+
