@@ -23,7 +23,6 @@ date: "2020-02-25"
             <label for="organization">Organization</label>
             <input type="text" name="organization" id="organization"  placeholder="Company, Inc." />
          </div>
-         {{ if in .Params.tags "contact" }}
          <div class="form-item">
             <label for="subject">Subject</label>
             <input type="text" name="subject" id="subject"  value="" placeholder="Need help or expertise?" />
@@ -33,14 +32,12 @@ date: "2020-02-25"
          </div>
          <div class="form-item">
             <label for="message">Message</label>
-            <textarea  rows="6" name="message" id="message"  placeholder="Please add details concerning your request."></textarea>
+            <textarea  rows="6" name="message" id="message"  placeholder="What's Up?"></textarea>
          </div>
-         {{ else }}
          <div class="form-item">
             <input type="hidden" name="subject" id="subject"  value="Your Access to Product Demo!" />
             <input type="hidden" name="target" id="target"  value="demo" />
          </div>
-         {{ end }}
          <!-- uncomment the below div when enabling reCaptcha
          <div class="g-recaptcha" data-sitekey="{{.Site.Params.reCaptchaPrivateKey}}"></div>
          -->
