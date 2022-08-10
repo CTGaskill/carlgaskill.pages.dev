@@ -1,67 +1,44 @@
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+---
+title: "Contact"
+date: "2020-02-25"
+---
+You can contact us here!
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
-</head>
-<body>
-
-<h3>Contact Form</h3>
-<div class="container">
-  <form action="https://getform.io/f/66cf5677-1633-4246-a197-4c6f9ff31427" method="POST">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-
-</body>
-</html>
+<form action="https://getform.io/f/66cf5677-1633-4246-a197-4c6f9ff31427" method="POST">
+  <div class="form-group row">
+    <label for="name" class="col-4 col-form-label">Name</label>
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <i class="fa fa-user"></i>
+        </div>
+        <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="email" class="col-4 col-form-label">E-mail address</label>
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <i class="fa fa-envelope"></i>
+        </div>
+        <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="message" class="col-4 col-form-label">Message</label>
+    <div class="col-8">
+      <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Send</button>
+    </div>
+  </div>
+  <div class="text-center">
+    <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
+  </div>
+</form>
