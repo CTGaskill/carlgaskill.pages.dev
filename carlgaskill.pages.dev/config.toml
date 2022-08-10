@@ -1,0 +1,81 @@
+baseurl      = "/"
+title        = "Carl Gaskill: DevOps Engineer"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Lets Get in Touch :)"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "Carl Gaskill : DevOps Engineer"
+  keywords = "homepage, blog"
+  images = [""]
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "DevOps, Infrastructure, Some Dev Stuff, and All Things Cloud."
+    subtitle = ""
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+    [languages.en.params.logo]
+      logoText = "Hi, I'm Carl."
+      logoHomeLink = "/"
+
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/blog"
+  
+  [[menu.main]]
+    identifier = "About"
+    name       = "About"
+    url        = "/aboutme"
+
+  [[menu.main]]
+    identifier = "resume"
+    name       = "Resume"
+    url        = "/Resume"
+
+  [[menu.main]]
+    identifier = "Contact"
+    name       = "Contact"
+    url        = "/Contact"
+    
+    [params.portrait]
+    path     = "/content/images/portrait.jpg"
+    alt      = ""
+#    maxWidth = "50px"
+      
+# Social icons
+  [[params.social]]
+    name = "email"
+    url  = "mailto:carlgaskill@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/CTGaskill"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/carlgaskill"
