@@ -55,7 +55,8 @@ paginate     = 10
   [[menu.main]]
     identifier = "resume"
     name       = "Resume"
-    url        = "https://site-assets-2.s3.amazonaws.com/Carl+Gaskill+Resume.pdf"
+    url        = "/resume"
+  ###  url        = "https://site-assets-2.s3.amazonaws.com/Carl+Gaskill+Resume.pdf"
 
   [[menu.main]]
     identifier = "Contact"
