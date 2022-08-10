@@ -2,43 +2,37 @@
 title: "Contact"
 date: "2020-02-25"
 ---
-You can contact us here!
 
-<form action="https://getform.io/f/66cf5677-1633-4246-a197-4c6f9ff31427" method="POST">
-  <div class="form-group row">
-    <label for="name" class="col-4 col-form-label">Name</label>
-    <div class="col-8">
-      <div class="input-group">
-        <div class="input-group-addon">
-          <i class="fa fa-user"></i>
+<form name="contact" class="contact-form width-normal" action="https://getform.io/f/66cf5677-1633-4246-a197-4c6f9ff31427" method="POST">
+    <input type="hidden" name="form-name" value="contact" />
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="Name"></label>
+        <div class="col-md-4">
+            <input id="contact-form-name" name="Name" type="text" placeholder="Name" class="form-control input-md" required="" autocomplete="off">
         </div>
-        <input id="name" name="name" placeholder="Please enter your name" type="text" required="required" class="form-control">
-      </div>
     </div>
-  </div>
-  <div class="form-group row">
-    <label for="email" class="col-4 col-form-label">E-mail address</label>
-    <div class="col-8">
-      <div class="input-group">
-        <div class="input-group-addon">
-          <i class="fa fa-envelope"></i>
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="Email"></label>
+        <div class="col-md-4">
+            <input id="contact-form-email" name="Email" type="email" placeholder="Email Address" class="form-control input-md" required="" autocomplete="off">
         </div>
-        <input id="email" name="email" placeholder="Your e-mail address" type="text" required="required" class="form-control">
-      </div>
     </div>
-  </div>
-  <div class="form-group row">
-    <label for="message" class="col-4 col-form-label">Message</label>
-    <div class="col-8">
-      <textarea id="message" name="message" cols="40" rows="10" required="required" class="form-control"></textarea>
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="Subject"></label>
+        <div class="col-md-4">
+            <input id="contact-form-subject" name="Subject" type="text" placeholder="Subject" class="form-control input-md" required="" autocomplete="off">
+        </div>
     </div>
-  </div>
-  <div class="form-group row">
-    <div class="offset-4 col-8">
-      <button name="submit" type="submit" class="btn btn-primary">Send</button>
+    <!-- Textarea -->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for=""></label>
+        <textarea class="form-control" id="contact-form-message" name="Message" placeholder="What's up?" rows="8"></textarea>
     </div>
-  </div>
-  <div class="text-center">
-    <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
-  </div>
+    <!-- Button -->
+    <div class="form-group">
+        <button type="submit" value="Submit" id="Form-submit">Submit</button>
+    </div>
 </form>
