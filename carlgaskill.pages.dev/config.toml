@@ -55,7 +55,7 @@ paginate     = 10
   [[menu.main]]
     identifier = "resume"
     name       = "Resume"
-    url        = "/Resume"
+    url        = "https://site-assets-2.s3.amazonaws.com/Carl+Gaskill+Resume.pdf"
 
   [[menu.main]]
     identifier = "Contact"
@@ -63,9 +63,9 @@ paginate     = 10
     url        = "/Contact"
     
     [params.portrait]
-    path     = "/content/images/portrait.jpg"
+    path     = "/static/img/portrait.jpg"
     alt      = ""
-#    maxWidth = "50px"
+   maxWidth = "200px"
       
 # Social icons
   [[params.social]]
